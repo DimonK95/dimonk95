@@ -6,8 +6,8 @@
     <title>Unity WebGL Player | findPlace</title>
     <script src="Build/UnityLoader.js"></script>
     <script>
+       UnityLoader.compatibilityCheck = function (e, t) {t();}; // <== add this line
       UnityLoader.instantiate("unityContainer", "Build/we3.json");
-      UnityLoader.compatibilityCheck=function(e,t,r){t();};
     </script>
   </head>
   <body>
